@@ -90,8 +90,8 @@ Users should be able to: - View responsive layouts\
 
 Add your screenshot here:
 
-    [](./design/desktop-design.jpg)
     [](./design/active-states.jpg)
+    [](./design/desktop-design.jpg)
     [](./design/desktop-thank-you-state.jpg)
     [](./design/mobile-design.jpg)
     [](./design/mobile-thank-you-state.jpg)
