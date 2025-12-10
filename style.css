@@ -1,0 +1,175 @@
+:root {
+  --secondary-color: hsl(0, 100%, 100%);
+  --primary-color: hsl(25, 97%, 53%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --typo-font: 'Overpass', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--grey-950);
+    font-family: var(--typo-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: var(--grey-900);
+    width: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    align-items: start;
+    justify-items: start;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-family: var(--typo-font);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-1{
+    background-color: var(--grey-900);
+    width: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-family: var(--typo-font);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+/* Icon styles */
+.icon-star{
+    background-color: var(--grey-950);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.icon-star img{
+    width: 15px;
+    height: 15px;
+}
+.card h1{
+    font-size: 1.5rem;
+    font-family: var(--typo-font);
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    font-size: 1.5rem;
+}
+.card p{
+    font-size: 0.9rem;
+    color: var(--grey-500);
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+.rating-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+.rating-buttons button{
+    background-color: var(--grey-950);
+    color: var(--grey-500);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.rating-buttons button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.rating-buttons button.selected{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.submit-button{
+    background-color: var(--primary-color);
+    color: var(--grey-950);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: .8rem;
+    font-family: var(--typo-font);
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submit-button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+/* Thank you state styles */
+.ThankYou-card{
+    display: none;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 1rem;
+    border-radius: 15px;
+    width: 350px;
+    animation:fadeIn .32s ease both;
+}
+.ThankYou-card.show{ /* make visible when JS toggles .show */
+    display: block;
+}
+.ThankYou-icon-star img{
+    width: auto;
+    height: auto;
+}
+.rating-txt{
+    color: var(--primary-color);
+    background-color: var(--grey-950);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
+.ThankYou h1{
+    font-size: 1.5rem;
+    font-family: var(--typo-font);
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+.ThankYou p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--grey-500);
+    font-weight: 400;
+}
